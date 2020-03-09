@@ -1,14 +1,22 @@
-# Welcome to your CDK TypeScript project!
+# CDK - Folding@Home (COVID-19)
 
-This is a blank project for TypeScript development with CDK.
+Setup project dependencies and create a new CDK project
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+```bash
+npm install -g aws-cdk
+mkdir cdk-fah-covid19 && cd cdk-fah-covid19
+cdk init --language typescript
+```
 
-## Useful commands
+## CDK dependencies
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+```bash
+npm install @aws-cdk/aws-ecs
+```
+
+## Deploy
+
+```bash
+npm run watch
+cdk deploy
+```
